@@ -41,7 +41,7 @@ const Profile = () => {
                             <SideBar />
                             <div className="col-md-8 col-xl-7 col-xxl-6 offset-xl-1">
                                 <form>
-                                    <h1 className="d-none d-md-block">Личный кабинет</h1>
+                                    <h1 className="inner d-none d-md-block">Личный кабинет</h1>
                                     <h5>{(user.user.firstname) ? user.user.firstname : 'Имя'} {(user.user.lastname) ? user.user.lastname : 'Фамилия'}</h5>
                                     {user.user.phone ?
                                         <fieldset className="mb-4 mb-sm-5">

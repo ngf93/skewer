@@ -6,6 +6,8 @@ import { addAddress, editAddress, deleteAddress } from "../../http/userAPI"
 import { getStreets } from "../../http/orderAPI"
 import SideBar from "./components/menu"
 import { NotificationManager } from 'react-notifications'
+import { IoAdd } from "react-icons/io5"
+import { IconContext } from "react-icons"
 
 const Address = () => {
     const { action, actionId } = useParams()
@@ -283,8 +285,10 @@ const Address = () => {
                                             : <div className="fs-09 mb-4">Добавьте адрес для доставки по умолчанию.</div>
                                     }
                                     <Link to={PROFILE_ROUTE + '/address/add'} className="d-flex align-items-center fw-6">
-                                        <img src="/images/icons/plus3.svg" alt="Добавить" className="me-2" />
-                                        <span className="primary">Добавить адрес</span>
+                                        <IconContext.Provider value={{ className: "primary fs-11" }}>
+                                            <IoAdd />
+                                        </IconContext.Provider>
+                                        <span className="primary ms-1">Добавить адрес</span>
                                     </Link>
                                 </form>
                                 <Link to={PROFILE_ROUTE} className="gray-4 d-flex align-items-center">

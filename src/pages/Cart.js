@@ -31,7 +31,7 @@ const Cart = observer(() => {
                                 <form>
                                     <CartContent />
                                 </form>
-                                <h3 className="fw-7 mb-3 mt-4">Вам может понравится</h3>
+                                <h3 className="fw-4 mb-3 mt-4">Вам может понравится</h3>
                                 <RecommendList list={recommend} />
                             </>
                             :

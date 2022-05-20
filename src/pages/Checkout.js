@@ -198,7 +198,7 @@ const Checkout = observer(() => {
                                             </div>
                                         </div>
                                         <fieldset className="mb-4 mb-sm-5">
-                                            <legend className="title-font gray-1 fs-15 fw-7 mb-3">Способ получения заказа:</legend>
+                                            <legend className="title-font gray-4 fs-15 fw-7 mb-3">Способ получения заказа:</legend>
                                             <div>
                                                 <div className="switch fs-11 mb-4">
                                                     <a className={checkout.delivery === 1 ? "switch-option fw-6 active" : "switch-option fw-6"} onClick={() => setCheckout({ ...checkout, delivery: 1 })}>Самовывоз</a>
@@ -215,20 +215,20 @@ const Checkout = observer(() => {
                                                             <NavDropdown.Item onClick={addLocalAddress} active={(address == 'Гвардейская 33') ? true : false}>Гвардейская 33</NavDropdown.Item>
                                                         </NavDropdown>
                                                         <div className="col-12">
-                                                            <div className="gray-1 mb-2">Комментарий</div>
+                                                            <div className="gray-4 mb-2">Комментарий</div>
                                                             <textarea rows="3" name="comment" placeholder="Комментарий к заказу" onChange={change} value={checkout.comment}></textarea>
                                                         </div>
                                                     </div>
                                                     :
                                                     (user.isAuth && user.user.address && user.user.address.length > 0) ?
                                                         <>
-                                                            <div className="fs-09 gray-1 mb-4">Выберите адрес для доставки по умолчанию.</div>
+                                                            <div className="fs-09 gray-4 mb-4">Выберите адрес для доставки по умолчанию.</div>
                                                             {
                                                                 user.user.address.map((item, i) =>
                                                                     <div key={i} className="d-flex align-items-start mb-4">
                                                                         <input type="radio" name="address" value={i} id={"address-" + i} onClick={changeAddress} defaultChecked={(i === 0) ?? true} />
                                                                         <div className="ms-2">
-                                                                            <label for={"address-" + i} className="gray-1 fw-5">{(item.name) ? item.name : item.street}</label>
+                                                                            <label for={"address-" + i} className="gray-4 fw-5">{(item.name) ? item.name : item.street}</label>
                                                                             <div className="d-flex mt-2">
                                                                                 <Link to={PROFILE_ROUTE + '/address/edit/' + item.id} className="fs-09 gray-4">Редактировать</Link>
                                                                             </div>
@@ -244,14 +244,14 @@ const Checkout = observer(() => {
                                                                 <span className="primary ms-1">Добавить адрес</span>
                                                             </Link>
                                                             <div className="col-12 mt-3">
-                                                                <div className="gray-1 mb-2">Комментарий</div>
+                                                                <div className="gray-4 mb-2">Комментарий</div>
                                                                 <textarea rows="3" name="comment" placeholder="Комментарий к заказу" onChange={change} value={checkout.comment}></textarea>
                                                             </div>
                                                         </>
                                                         :
                                                         <div className="row g-2 g-lg-3 sec-font">
                                                             <div className="col-sm-10">
-                                                                <div className="gray-1 mb-2">Улица <span className="text-danger">*</span></div>
+                                                                <div className="gray-4 mb-2">Улица <span className="text-danger">*</span></div>
                                                                 <input type="text" list="streets" onChange={change} onKeyUp={change} name="street" autoComplete="off" placeholder="Улица" />
                                                                 <datalist id="streets">
                                                                     {
@@ -264,27 +264,27 @@ const Checkout = observer(() => {
                                                                 </datalist>
                                                             </div>
                                                             <div className="col-2">
-                                                                <div className="gray-1 mb-2">Дом <span className="text-danger">*</span></div>
+                                                                <div className="gray-4 mb-2">Дом <span className="text-danger">*</span></div>
                                                                 <input type="text" name="home" placeholder="Дом" onChange={change} value={checkout.home} />
                                                             </div>
                                                             <div className="col-3">
-                                                                <div className="gray-1 mb-2">Квартира <span className="text-danger">*</span></div>
+                                                                <div className="gray-4 mb-2">Квартира <span className="text-danger">*</span></div>
                                                                 <input type="text" name="apartment" placeholder="Квартира" onChange={change} value={checkout.apartment} />
                                                             </div>
                                                             <div className="col-3">
-                                                                <div className="gray-1 mb-2">Подъезд</div>
+                                                                <div className="gray-4 mb-2">Подъезд</div>
                                                                 <input type="text" name="entrance" placeholder="Подъезд" onChange={change} value={checkout.entrance} />
                                                             </div>
                                                             <div className="col-3">
-                                                                <div className="gray-1 mb-2">Этаж</div>
+                                                                <div className="gray-4 mb-2">Этаж</div>
                                                                 <input type="text" name="floor" placeholder="Этаж" onChange={change} value={checkout.floor} />
                                                             </div>
                                                             <div className="col-3">
-                                                                <div className="gray-1 mb-2">Код двери</div>
+                                                                <div className="gray-4 mb-2">Код двери</div>
                                                                 <input type="text" name="code" placeholder="Код двери" onChange={change} value={checkout.code} />
                                                             </div>
                                                             <div className="col-12">
-                                                                <div className="gray-1 mb-2">Комментарий</div>
+                                                                <div className="gray-4 mb-2">Комментарий</div>
                                                                 <textarea rows="3" name="comment" placeholder="Комментарий к заказу" onChange={change} value={checkout.comment}></textarea>
                                                             </div>
                                                             {
@@ -303,7 +303,7 @@ const Checkout = observer(() => {
                                             </div>
                                         </fieldset>
                                         <fieldset className="mb-3 mb-sm-4">
-                                            <legend className="title-font gray-1 fs-15 fw-7 mb-3">Заказать ко времени:</legend>
+                                            <legend className="title-font gray-4 fs-15 fw-7 mb-3">Заказать ко времени:</legend>
                                             <div className="sec-font">
                                                 <div className="d-flex align-items-center mb-2">
                                                     <input type="radio" name="time" value={1} id="sooner" onClick={change} defaultChecked />
@@ -327,7 +327,7 @@ const Checkout = observer(() => {
                                         </fieldset>
                                         <div className="row">
                                             <fieldset className="col-md-6">
-                                                <legend className="title-font gray-1 fs-15 fw-7 mb-3">Способ оплаты:</legend>
+                                                <legend className="title-font gray-4 fs-15 fw-7 mb-3">Способ оплаты:</legend>
                                                 <div className="sec-font">
                                                     <div>
                                                         <div className="d-flex align-items-center mb-3">
@@ -348,7 +348,7 @@ const Checkout = observer(() => {
                                             {
                                                 user.isAuth &&
                                                 <fieldset className="col-md-6">
-                                                    <legend className="title-font gray-1 fs-15 fw-7 mb-3">Оплата баллами</legend>
+                                                    <legend className="title-font gray-4 fs-15 fw-7 mb-3">Оплата баллами</legend>
                                                     <p className="mb-2">У вас {user.user.point} баллов</p>
                                                     {
                                                         user.user.point > 0 &&
@@ -363,11 +363,11 @@ const Checkout = observer(() => {
                                     </div>
                                     <div className="col-md-5 col-xl-4 position-relative">
                                         <div className="bonus">
-                                            <div className="gray-1 title-font fw-7 fs-12 lh-15 text-center">При заказе от 700₽ - доставим бесплатно!<br /><Link className="text-success" to={DELIVERY_ROUTE}>Подробнее о доставке</Link></div>
+                                            <div className="gray-2 title-font fw-7 fs-12 lh-15 text-center">При заказе от 700₽ - доставим бесплатно!<br /><Link className="text-success" to={DELIVERY_ROUTE}>Подробнее о доставке</Link></div>
                                         </div>
                                         <div className="checkout-box cart-preview">
                                             <div className="mb-4">
-                                                <div className="title-font gray-1 fs-15 fw-6 mb-3">Ваш заказ:</div>
+                                                <div className="title-font gray-2 fs-15 fw-6 mb-3">Ваш заказ:</div>
                                                 <div className="cart-scroll">
                                                     <CartContent type="checkout" />
                                                 </div>
@@ -407,7 +407,7 @@ const Checkout = observer(() => {
                                                 <button disabled={(cart.cart && cart.cart.length > 0 && checkout.phone && checkout.phone.length >= 11 && !sendLoading && (cart.deliveryMinPrice < (cart.total + (cart.sale.total ? cart.sale.total : 0)) || checkout.delivery == 1)) ? false : true} type="submit" className="btn btn-1 mt-3 w-100 fs-11">{sendLoading ? 'Отправка заявки...' : 'Оформить заказ'}</button>
                                             </div>
                                         </div>
-                                        <div className="text-center fs-10 gray-3 mt-3">Нажимая "Оформить заказ", Вы соглашаетесь с <Link className="text-success" to={POLICY_ROUTE}>Политикой конфиденциальности</Link></div>
+                                        <div className="text-center fs-10 gray-4 mt-3">Нажимая "Оформить заказ", Вы соглашаетесь с <Link className="text-success" to={POLICY_ROUTE}>Политикой конфиденциальности</Link></div>
                                     </div>
                                 </div>
                             </form>

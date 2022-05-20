@@ -178,7 +178,7 @@ const CartContent = observer(({ type }) => {
         return (
             <div className="gx-xxl-5">
                 <div className="d-flex justify-content-center justify-content-md-end">
-                    <button type="button" className="gray-3 me-md-0 mb-4" onClick={removeAllProduct}>Очистить корзину</button>
+                    <button type="button" className="gray-4 me-md-0 mb-4" onClick={removeAllProduct}>Очистить корзину</button>
                 </div>
                 {
                     cart.cart.map((cart, i) => {

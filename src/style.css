@@ -2659,8 +2659,9 @@ footer nav ul {
 }
 footer nav ul li a {transition: .3s;
 }
-footer nav ul li a:hover, footer nav ul li a:focus {
-  color: #000;
+footer nav ul li a:hover, footer nav ul li a:focus,
+footer nav ul li a:active, footer nav ul li a.active {
+  color: var(--light-color);
 }
 
 footer .social img {
@@ -3104,7 +3105,7 @@ footer .icon {
   }
 }
 .product-dop-box{
-    background-color:#323232;
+    background-color:#111111;
     border-radius: 30px;
     padding: 4px 10px;
     font-size: 13px;
