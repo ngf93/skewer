@@ -63,7 +63,7 @@ input[type=number]{
   -moz-appearance: textfield;
 }
 
-input, textarea {
+input, textarea, .form-control {
   background: #ffffff;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
@@ -1571,6 +1571,35 @@ border-radius: 12px;
 }
 @media (max-width: 1199px) {
   .swiper-about img {height: 300px;}
+}
+
+
+/* sec 7 */
+.about-img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+@media (max-width: 1659px){
+  .about-img {height: 300px;}
+}
+@media (max-width: 1399px){
+  .about-img {height: 265px;}
+}
+@media (max-width: 1199px){
+  .about-img {height: 230px;}
+}
+@media (max-width: 991px){
+  .about-img {height: 175px;}
+}
+@media (max-width: 767px){
+  .about-img {
+    height: 300px;
+    margin-top: 1em;
+  }
+}
+@media (max-width: 575px){
+  .about-img {height: 65vw;}
 }
 
 

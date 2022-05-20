@@ -17,14 +17,14 @@ const About = () => {
                     <h2 className="text-center text-md-start mt-5">Способы доставки:</h2>
                     <div className="row mb-5">
                         <div className="col-lg-6 d-flex align-items-start mb-4 mb-lg-0">
-                            <img src="/images/icons/delivery1.svg" alt="Доставка курьером" className='icon'/>
+                            <img src="/images/icons/delivery1.png" alt="Доставка курьером" className='icon'/>
                             <div className='flex-1 ms-2 ms-xl-4'>
                                 <h6 className="fs-13 fw-6">Доставка курьером</h6>
                                 <p className='fs-12'>Бесплатная доставка. Минимальная сумма заказа 1000 руб.</p>
                             </div>
                         </div>
                         <div className="col-lg-6 d-flex align-items-start">
-                            <img src="/images/icons/delivery2.svg" alt="Самовывоз" className='icon'/>
+                            <img src="/images/icons/delivery2.png" alt="Самовывоз" className='icon'/>
                             <div className='flex-1 ms-2 ms-xl-4'>
                                 <h6 className="fs-13 fw-6">Самовывоз</h6>
                                 <div className="fs-12 mb-2">Казань, ул. Театральная д.3</div>
@@ -36,7 +36,7 @@ const About = () => {
                     <h2 className="text-center text-md-start">Способы оплаты:</h2>
                     <div className="row">
                         <div className="col-lg-4 d-flex align-items-start mb-4 mb-lg-0">
-                            <img src="/images/icons/payment1.svg" alt="Онлайн оплата" className='icon' />
+                            <img src="/images/icons/payment1.png" alt="Онлайн оплата" className='icon' />
                             <div className='flex-1 ms-2 ms-xl-4'>
                                 <h6 className="fs-13 fw-6">Онлайн оплата</h6>
                                 <ul className='list-unstyled payment mt-2'>
@@ -66,7 +66,7 @@ const About = () => {
                         </div>
 
                         <div className="col-lg-4 d-flex align-items-start mb-4 mb-lg-0">
-                            <img src="/images/icons/payment1.svg" alt="Оплата картой курьеру" className='icon'/>
+                            <img src="/images/icons/payment2.png" alt="Оплата картой курьеру" className='icon'/>
                             <div className='flex-1 ms-2 ms-xl-4'>
                                 <h6 className="fs-13 fw-6">Оплата картой курьеру</h6>
                                 <p>Курьер привезёт с&nbsp;собой мобильный платёжный терминал. Принимаются карты Mastercard, Maestro и&nbsp;Visa.</p>
@@ -74,7 +74,7 @@ const About = () => {
 
                         </div>
                         <div className="col-lg-4 d-flex align-items-start">
-                            <img src="/images/icons/payment1.svg" alt="Оплата наличными" className='icon'/>
+                            <img src="/images/icons/payment3.png" alt="Оплата наличными" className='icon'/>
                             <div className='flex-1 ms-2 ms-xl-4'>
                                 <h6 className="fs-13 fw-6">Оплата наличными</h6>
                                 <p>Вы&nbsp;можете оплатить заказ наличными нашему курьеру или&nbsp;при&nbsp;самовывозе</p>

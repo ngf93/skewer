@@ -12,16 +12,14 @@ const About = () => {
 
     return (
         <main className='pt-4 pt-lg-5'>
-            <section className="position-relative container mb-8">
-                <div className='row row-cols-lg-2 mb-5'>
+            <section className="sec-7 position-relative container mb-8">
+                <div className='row row-cols-lg-1 mb-5'>
                     <div>
-                        <h1 className="inner text-center text-md-start">«RefettoriO» — ваше маленькое путешествие в Италию.</h1>
-                        <p className='fs-11 mb-3'>«а Rome», мы готовим традиционную итальянскую пиццу на тонком тесте с 2008 года, в 2022 мы провели Ребрендинг - сменили имя.</p>
-                        <p className='fs-11 mb-3'>«RefettoriO» — это ваше маленькое и незабываемое путешествие в Италию. Место, где вы всегда сможете отвлечься от городской суеты, при этом находясь в историческом центре Казани. Наших посетителей приятно порадуют дружелюбная атмосфера, заботливое отношение персонала к каждому гостю, демократичные цены и широкий выбор блюд.</p>
-                        <p className='fs-11 mb-3'>«RefettoriO» славится своей пиццей, которая готовится в дровяной печи в зале. Каждый гость может воочию увидеть процесс приготовления этого блюда. А большой ассортимент позволит всем насладиться «любимой пиццей»!</p>
-                        <p className='fs-11 mb-3'>«RefettoriO» - попробуй Италию на вкус!</p>
+                        <h1 className="inner text-center text-md-start">ДОСТАВКА ШАУРМЫ И ШАШЛЫКА В КАЗАНИ</h1>
+                        <p className='fs-11 mb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, amet feugiat ut nullam gravida pharetra ante. Elementum aliquet nibh donec amet mauris magna praesent imperdiet morbi. Odio in mi arcu imperdiet nisl eu. Felis, sem volutpat nibh sapien, felis dignissim. Velit suspendisse praesent scelerisque mi commodo vitae non ac. Quam a consectetur orci rhoncus in fermentum, dui posuere. Aenean varius sit quis ultrices sem neque, dictum mattis turpis. Risus, aliquet nisi, vulputate adipiscing euismod risus. Etiam amet consequat, mi, sagittis neque sit odio magnis. Duis metus arcu, quisque tellus lorem sed commodo.</p>
+                        <p className='fs-11 mb-3'>Imperdiet imperdiet nunc vestibulum, nec. Dolor ut leo quis sed in malesuada amet cras. Egestas a nunc a purus. Dui, interdum ante enim id elit a. Eu nibh rhoncus, et dui ac. Morbi diam eu ultricies semper. Et tortor semper nunc porta vitae augue. Ultricies velit, aliquam libero elit quis. Aliquet est vehicula morbi dignissim.</p>
                     </div>
-                    <div>
+                    {/* <div>
                         <Swiper
                             loop={true}
                             slidesPerView={1}
@@ -54,50 +52,42 @@ const About = () => {
                                 <img src="/images/hall8.jpg" alt="RefettoriO" className="img-fluid" />
                             </SwiperSlide>
                         </Swiper>
-                        
-                    </div>
+                    </div> */}
                 </div>
                 <div className='row flex-md-row-reverse mb-5'>
                     <div className='col-md-8'>
                         <h2>Меню</h2>
-                        <p className='fs-11 mb-3'>Приготовленные по итальянским рецептам паста, ризотто. Большой выбор салатов и мясных блюд, десерты на любой вкус и конечно же изысканная, аппетитная и ароматная итальянская пицца, приготовленная в дровяной печи.</p>
-                        <p className='fs-11 mb-3'>Вкусная еда – не повод платить больше.</p>
-                        <p className='fs-11 mb-3'>Доступные цены, отличная кухня и приятная атмосфера для утреннего завтрака, деловых встреч за бизнес-ланчем, а также посиделок с семьей и друзьями, для любой компании и по любому поводу.</p>
+                        <p className='fs-11 mb-3'>Imperdiet imperdiet nunc vestibulum, nec. Dolor ut leo quis sed in malesuada amet cras. Egestas a nunc a purus. Dui, interdum ante enim id elit a. Eu nibh rhoncus, et dui ac. Morbi diam eu ultricies semper. Et tortor semper nunc porta vitae augue. Ultricies velit, aliquam libero elit quis. Aliquet est vehicula morbi dignissim.</p>
                     </div>
                     <div className='col-md-4'>
-                        <img src="/images/about1.jpg" alt="Меню" className="img-fluid" />
+                        <img src="/images/about1.jpg" alt="Меню" className="about-img" />
                     </div>
                 </div>
                 <div className='row mb-5'>
                     <div className='col-md-8'>
                         <h2>Повара</h2>
-                        <p className='fs-11 mb-3'>Наши повара с искренней любовью относятся к своему делу.</p>
-                        <p className='fs-11 mb-3'>Каждый день замешивают тесто, распаляют печь до 400С и нарезают ингредиенты, чтобы радовать наших гостей вкусной едой, и гости возвращаются к нам со своими близкими и друзьями еще много раз!</p>
+                        <p className='fs-11 mb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, amet feugiat ut nullam gravida pharetra ante. Elementum aliquet nibh donec amet mauris magna praesent imperdiet morbi. Odio in mi arcu imperdiet nisl eu. Felis, sem volutpat nibh sapien, felis dignissim. Velit suspendisse praesent scelerisque mi commodo vitae non ac. Quam a consectetur orci rhoncus in fermentum, dui posuere. Aenean varius sit quis ultrices sem neque, dictum mattis turpis. Risus, aliquet nisi, vulputate adipiscing euismod risus. Etiam amet consequat, mi, sagittis neque sit odio magnis. Duis metus arcu, quisque tellus lorem sed commodo.</p>
                     </div>
                     <div className='col-md-4'>
-                        <img src="/images/about2.jpg" alt="Повара" className="img-fluid" />
+                        <img src="/images/about2.jpg" alt="Повара" className="about-img" />
                     </div>
                 </div>
                 <div className='row flex-md-row-reverse mb-5'>
                     <div className='col-md-8'>
                         <h2>Доставка</h2>
-                        <p className='fs-11 mb-3'>Не располагаете свободным временем, чтобы посетить наше заведение и отведать ароматную пиццу и другие итальянские блюда!?</p>
-                        <p className='fs-11 mb-3'>Звоните нам, и мы доставим ваш заказ домой или в офис.</p>
-                        <p className='fs-11 mb-3'>Вы можете быть уверенны в том, что доставленная нашими курьерами еда всегда свежая и только что приготовленная.</p>
+                        <p className='fs-11 mb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, amet feugiat ut nullam gravida pharetra ante. Elementum aliquet nibh donec amet mauris magna praesent imperdiet morbi. Odio in mi arcu imperdiet nisl eu. Felis, sem volutpat nibh sapien, felis dignissim. Velit suspendisse praesent scelerisque mi commodo vitae non ac. Quam a consectetur orci rhoncus in fermentum, dui posuere. Aenean varius sit quis ultrices sem neque, dictum mattis turpis. Risus, aliquet nisi, vulputate adipiscing euismod risus. Etiam amet consequat, mi, sagittis neque sit odio magnis. Duis metus arcu, quisque tellus lorem sed commodo.</p>
                     </div>
                     <div className='col-md-4'>
-                        <img src="/images/about3.jpg" alt="Доставка" className="img-fluid" />
+                        <img src="/images/about3.jpg" alt="Доставка" className="about-img" />
                     </div>
                 </div>
                 <div className='row'>
                     <div className='col-md-8'>
                         <h2>Опыт</h2>
-                        <p className='fs-11 mb-3'>У нас накопился огромный опыт, наши повара работают у нас более 13лет.</p>
-                        <p className='fs-11 mb-3'>Мы дорожим своей репутацией и каждым клиентом. Каждую пиццу мы делаем вручную, начиная с момента приготовления теста и заканчивая контролем качества выпечки.</p>
-                        <p className='fs-11 mb-3'>Для приготовления итальянской пиццы мы используем дровяную печь и живой огонь. Так готовится традиционная итальянская пицца на тонком тесте.</p>
+                        <p className='fs-11 mb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, amet feugiat ut nullam gravida pharetra ante. Elementum aliquet nibh donec amet mauris magna praesent imperdiet morbi. Odio in mi arcu imperdiet nisl eu. Felis, sem volutpat nibh sapien, felis dignissim. Velit suspendisse praesent scelerisque mi commodo vitae non ac. Quam a consectetur orci rhoncus in fermentum, dui posuere. Aenean varius sit quis ultrices sem neque, dictum mattis turpis. Risus, aliquet nisi, vulputate adipiscing euismod risus. Etiam amet consequat, mi, sagittis neque sit odio magnis. Duis metus arcu, quisque tellus lorem sed commodo.</p>
                     </div>
                     <div className='col-md-4'>
-                        <img src="/images/about4.jpg" alt="Опыт" className="img-fluid" />
+                        <img src="/images/about4.jpg" alt="Опыт" className="about-img" />
                     </div>
                 </div>
             </section>
